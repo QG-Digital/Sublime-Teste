@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seja um Fornecedor - Sublime</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <header id="header">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/logo.png" alt="Sublime Logo" class="logo-icon">
+          <span>Sublime</span>
+        </a>
+      </div>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Empresa</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="seja-fornecedor.html" class="active btn-primary">Seja um Fornecedor</a></li>
+        </ul>
+        <div class="menu-mobile">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-hero-content">
+          <h1>Seja nosso <span class="text-accent">Fornecedor</span></h1>
+          <p>Junte-se à Sublime e expanda suas vendas nos principais marketplaces do Brasil</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="supplier-benefits">
+      <div class="container">
+        <div class="benefits-content">
+          <div class="benefits-text">
+            <h2>Por que se tornar nosso <span class="text-accent">Fornecedor</span>?</h2>
+            <p>Ao se tornar um fornecedor da Sublime, você terá acesso à nossa expertise em marketplaces e poderá expandir significativamente suas vendas online. Oferecemos uma parceria estratégica que beneficia ambas as partes.</p>
+            
+            <div class="benefits-grid">
+              <div class="benefit-item">
+                <i class="fas fa-rocket"></i>
+                <h3>Expansão Rápida</h3>
+                <p>Tenha seus produtos em 6+ marketplaces simultaneamente com nossa infraestrutura já estabelecida.</p>
+              </div>
+              
+              <div class="benefit-item">
+                <i class="fas fa-chart-line"></i>
+                <h3>Aumento de Vendas</h3>
+                <p>Nossa expertise em otimização de anúncios pode aumentar suas vendas em até 300%.</p>
+              </div>
+              
+              <div class="benefit-item">
+                <i class="fas fa-users"></i>
+                <h3>Equipe Especializada</h3>
+                <p>Time dedicado para gestão de estoque, atendimento ao cliente e marketing digital.</p>
+              </div>
+              
+              <div class="benefit-item">
+                <i class="fas fa-handshake"></i>
+                <h3>Parceria Transparente</h3>
+                <p>Relatórios detalhados de vendas e comissionamento justo para ambas as partes.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="benefits-image">
+            <img src="https://images.pexels.com/photos/6483582/pexels-photo-6483582.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1" alt="Parceria de Fornecedor">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="supplier-form">
+      <div class="container">
+        <div class="section-header">
+          <h2>Formulário de <span class="text-accent">Cadastro</span></h2>
+          <p class="subtitle">Preencha os dados abaixo para iniciarmos nossa parceria</p>
+        </div>
+        
+        <div class="form-container">
+          <form id="supplierForm" class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Nome Completo*</label>
+                <input type="text" id="name" name="name" required>
+                <span class="error-message" id="nameError"></span>
+              </div>
+              
+              <div class="form-group">
+                <label for="company">Nome da Empresa*</label>
+                <input type="text" id="company" name="company" required>
+                <span class="error-message" id="companyError"></span>
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Telefone*</label>
+                <input type="tel" id="phone" name="phone" placeholder="" required>
+                <span class="error-message" id="phoneError"></span>
+              </div>
+              
+              <div class="form-group">
+                <label for="email">E-mail*</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error-message" id="emailError"></span>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="description">Fale um pouco sobre sua empresa*</label>
+              <textarea id="description" name="description" rows="5" placeholder="Descreva sua empresa, produtos principais, tempo de mercado, etc." required></textarea>
+              <span class="error-message" id="descriptionError"></span>
+            </div>
+            
+            <div class="form-group">
+              <button type="submit" class="btn-primary submit-btn">
+                <i class="fas fa-paper-plane"></i> Enviar Proposta
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="process-steps">
+      <div class="container">
+        <div class="section-header">
+          <h2>Como funciona o <span class="text-accent">Processo</span></h2>
+          <p class="subtitle">Veja como é simples se tornar nosso fornecedor</p>
+        </div>
+        
+        <div class="steps-container">
+          <div class="step-item">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h3>Envie sua Proposta</h3>
+              <p>Preencha o formulário com as informações da sua empresa e produtos.</p>
+            </div>
+          </div>
+          
+          <div class="step-item">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h3>Análise da Equipe</h3>
+              <p>Nossa equipe analisará sua proposta em até 48 horas.</p>
+            </div>
+          </div>
+          
+          <div class="step-item">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h3>Reunião de Alinhamento</h3>
+              <p>Agendaremos uma reunião para conhecer melhor seus produtos.</p>
+            </div>
+          </div>
+          
+          <div class="step-item">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <h3>Início da Parceria</h3>
+              <p>Começamos a vender seus produtos nos marketplaces!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq">
+      <div class="container">
+        <div class="section-header">
+          <h2>Perguntas <span class="text-accent">Frequentes</span></h2>
+          <p class="subtitle">Tire suas dúvidas sobre nossa parceria de fornecimento</p>
+        </div>
+        
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Que tipos de produtos vocês aceitam?</h3>
+              <i class="fas fa-plus"></i>
+            </div>
+            <div class="faq-answer">
+              <p>Aceitamos diversos tipos de produtos, desde que atendam aos nossos critérios de qualidade. Priorizamos produtos com boa margem de lucro, demanda comprovada e que se adequem às políticas dos marketplaces. Alguns exemplos: eletrônicos, casa e decoração, fitness, automotivo, entre outros.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Como funciona o sistema de comissionamento?</h3>
+              <i class="fas fa-plus"></i>
+            </div>
+            <div class="faq-answer">
+              <p>Trabalhamos com um sistema de comissionamento sobre as vendas. O percentual varia de acordo com a categoria do produto e volume de vendas. Você receberá relatórios detalhados mensais com todas as vendas realizadas e comissões devidas.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Vocês compram o estoque ou trabalham com consignação?</h3>
+              <i class="fas fa-plus"></i>
+            </div>
+            <div class="faq-answer">
+              <p>Trabalhamos principalmente com o modelo de consignação, onde você mantém o estoque e nós gerenciamos as vendas. Em casos específicos, podemos negociar a compra de lotes, dependendo do produto e demanda. Isso será definido na nossa reunião de alinhamento.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Quanto tempo leva para começar a vender?</h3>
+              <i class="fas fa-plus"></i>
+            </div>
+            <div class="faq-answer">
+              <p>Após a aprovação da parceria, geralmente levamos de 5 a 10 dias para criar os anúncios em todos os marketplaces, fazer as fotos profissionais (se necessário) e configurar toda a estrutura de vendas. O tempo pode variar dependendo da complexidade dos produtos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">
+            <img src="images/logo.png" alt="Sublime Logo" class="logo-icon">
+            <span>Sublime</span>
+          </a>
+          <p>Especialistas em marketplace desde 2021. Qualidade e excelência em vendas online.</p>
+        </div>
+        
+        <div class="footer-social">
+          <h4>Redes Sociais</h4>
+          <div class="social-icons">
+            <a href="#" class="social-icon" data-platform="instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon" data-platform="facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon" data-platform="linkedin"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon" data-platform="youtube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Links Rápidos</h4>
+          <ul>
+            <li><a href="index.html">Empresa</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="seja-fornecedor.html">Seja um Fornecedor</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="copyright">
+          <p>&copy; 2025 Sublime. Todos os direitos reservados.</p>
+        </div>
+        <div class="developer">
+          <p>Desenvolvido por <a href="https://wa.me/5543996349824" target="_blank">QG.Digital</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal de Sucesso -->
+  <div id="successModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <div class="success-message">
+        <i class="fas fa-check-circle"></i>
+        <h3>Proposta enviada com sucesso!</h3>
+        <p>Obrigado pelo seu interesse em se tornar nosso fornecedor. Nossa equipe analisará sua proposta e entrará em contato em até 48 horas.</p>
+        <button class="btn-primary" id="closeSuccessModal">Fechar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/form-validation.js"></script>
+  <script src="js/telegram.js"></script>
+</body>
+</html>

@@ -81,9 +81,15 @@ document.addEventListener('DOMContentLoaded', function() {
     const whatsappBtn = document.getElementById('whatsappBtn');
     
     if (whatsappBtn) {
-        // Configure seu número de telefone e mensagem padrão aqui
-        const phoneNumber = 'wa.me/554396187471&text&type=phone_number&app_absent=0'; // Substitua pelo seu número
+        const phoneNumber = '553996187471'; // Número SEM o 0 do DDD
         const defaultMessage = 'Olá estava no site! Gostaria de conversar sobre os produtos Sublime.';
+        const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(defaultMessage)}`;
+        
+        whatsappBtn.addEventListener('click', function() {
+            window.open(whatsappLink, '_blank');
+        });
+    }
+});
         
         // Função para criar efeito de onda no clique
         function createClickWave() {

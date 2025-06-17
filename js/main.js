@@ -77,19 +77,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 // WhatsApp Button Functionality
-document.addEventListener('DOMContentLoaded', function() {
-    const whatsappBtn = document.getElementById('whatsappBtn');
-    
-    if (whatsappBtn) {
-        const phoneNumber = '553996187471'; // Número SEM o 0 do DDD
-        const defaultMessage = 'Olá estava no site! Gostaria de conversar sobre os produtos Sublime.';
-        const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(defaultMessage)}`;
-        
-        whatsappBtn.addEventListener('click', function() {
-            window.open(whatsappLink, '_blank');
-        });
+
+  const whatsappBtn = document.getElementById('whatsappBtn');
+
+  if (whatsappBtn) {
+    const phoneNumber = '553996187471'; // Número SEM o 0 do DDD
+    const defaultMessage = 'Olá estava no site! Gostaria de conversar sobre os produtos Sublime.';
+
+    // Função para criar efeito de onda no clique
+    function createClickWave() {
+      whatsappBtn.classList.add('clicked');
+      setTimeout(() => {
+        whatsappBtn.classList.remove('clicked');
+      }, 600);
     }
-});
         
         // Função para criar efeito de onda no clique
         function createClickWave() {

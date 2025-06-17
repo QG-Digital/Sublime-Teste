@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 // WhatsApp Button Functionality
-
+document.addEventListener('DOMContentLoaded', function() {
   const whatsappBtn = document.getElementById('whatsappBtn');
 
   if (whatsappBtn) {
@@ -91,49 +91,38 @@ document.addEventListener('DOMContentLoaded', function() {
         whatsappBtn.classList.remove('clicked');
       }, 600);
     }
-        
-        // Função para criar efeito de onda no clique
-        function createClickWave() {
-            whatsappBtn.classList.add('clicked');
-            setTimeout(() => {
-                whatsappBtn.classList.remove('clicked');
-            }, 600);
-        }
-        
-        // Event listener principal
-        whatsappBtn.addEventListener('click', function(e) {
-            e.preventDefault();
-            
-            
-            // Cria efeito de onda
-            createClickWave();
-            
-            // Abre WhatsApp após efeito
-            setTimeout(() => {
-                const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(defaultMessage)}`;
-                window.open(whatsappURL, '_blank');
-                
-            }, 400);
-        });
-        
-        // Efeito de tilt sutil
-        whatsappBtn.addEventListener('mousemove', function(e) {
-            const rect = this.getBoundingClientRect();
-            const centerX = rect.left + rect.width / 2;
-            const centerY = rect.top + rect.height / 2;
-            
-            const deltaX = (e.clientX - centerX) / (rect.width / 2);
-            const deltaY = (e.clientY - centerY) / (rect.height / 2);
-            
-            this.style.transform = `scale(1.05) perspective(100px) rotateX(${deltaY * 3}deg) rotateY(${deltaX * 3}deg)`;
-        });
-        
-        whatsappBtn.addEventListener('mouseleave', function() {
-            this.style.transform = '';
-        });
-    }
-});
 
+    // Event listener principal
+    whatsappBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      // Cria efeito de onda
+      createClickWave();
+
+      // Abre WhatsApp após efeito
+      setTimeout(() => {
+        const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(defaultMessage)}`;
+        window.open(whatsappURL, '_blank');
+      }, 400);
+    });
+
+    // Efeito de tilt sutil
+    whatsappBtn.addEventListener('mousemove', function(e) {
+      const rect = this.getBoundingClientRect();
+      const centerX = rect.left + rect.width / 2;
+      const centerY = rect.top + rect.height / 2;
+
+      const deltaX = (e.clientX - centerX) / (rect.width / 2);
+      const deltaY = (e.clientY - centerY) / (rect.height / 2);
+
+      this.style.transform = `scale(1.05) perspective(100px) rotateX(${deltaY * 3}deg) rotateY(${deltaX * 3}deg)`;
+    });
+
+    whatsappBtn.addEventListener('mouseleave', function() {
+      this.style.transform = '';
+    });
+  }
+});
 // Counter animation
 function animateCounters() {
   const counters = document.querySelectorAll('.counter');

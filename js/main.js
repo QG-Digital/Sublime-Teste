@@ -82,8 +82,8 @@ document.addEventListener('DOMContentLoaded', function() {
     
     if (whatsappBtn) {
         // Configure seu número de telefone e mensagem padrão aqui
-        const phoneNumber = '5543996349824'; // Substitua pelo seu número
-        const defaultMessage = 'Olá! Gostaria de conversar sobre os produtos Sublime.';
+        const phoneNumber = 'https://api.whatsapp.com/send/?phone=5543996187471&text&type=phone_number&app_absent=0'; // Substitua pelo seu número
+        const defaultMessage = 'Olá estava no site! Gostaria de conversar sobre os produtos Sublime.';
         
         // Função para criar efeito de onda no clique
         function createClickWave() {

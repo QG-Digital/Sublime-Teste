@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const whatsappBtn = document.getElementById('whatsappBtn');
 
   if (whatsappBtn) {
-    const phoneNumber = '554396187471'; // Número SEM o 0 do DDD
+    const phoneNumber = '5543996187471'; // Número SEM o 0 do DDD
     const defaultMessage = 'Olá estava no site! Gostaria de conversar sobre os produtos Sublime.';
 
     whatsappBtn.addEventListener('click', function(e) {

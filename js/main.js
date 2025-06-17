@@ -84,37 +84,19 @@ document.addEventListener('DOMContentLoaded', function() {
     const phoneNumber = '553996187471'; // Número SEM o 0 do DDD
     const defaultMessage = 'Olá estava no site! Gostaria de conversar sobre os produtos Sublime.';
 
-    // Função para criar efeito de onda no clique
-    function createClickWave() {
-      whatsappBtn.classList.add('clicked');
-      setTimeout(() => {
-        whatsappBtn.classList.remove('clicked');
-      }, 600);
-    }
-
-    // Event listener principal
     whatsappBtn.addEventListener('click', function(e) {
       e.preventDefault();
-      
-      // Cria efeito de onda
-      createClickWave();
-
-      // Abre WhatsApp após efeito
-      setTimeout(() => {
-        const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(defaultMessage)}`;
-        window.open(whatsappURL, '_blank');
-      }, 400);
+      const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(defaultMessage)}`;
+      window.open(whatsappURL, '_blank');
     });
 
-    // Efeito de tilt sutil
+    // Efeito de tilt sutil (opcional)
     whatsappBtn.addEventListener('mousemove', function(e) {
       const rect = this.getBoundingClientRect();
       const centerX = rect.left + rect.width / 2;
       const centerY = rect.top + rect.height / 2;
-
       const deltaX = (e.clientX - centerX) / (rect.width / 2);
       const deltaY = (e.clientY - centerY) / (rect.height / 2);
-
       this.style.transform = `scale(1.05) perspective(100px) rotateX(${deltaY * 3}deg) rotateY(${deltaX * 3}deg)`;
     });
 
